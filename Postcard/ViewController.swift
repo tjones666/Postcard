@@ -27,10 +27,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sendMailButtonPressed(sender: UIButton) {
+        //Prints MessageText in the Label area in red font
         messageLabel.hidden = false
         messageLabel.text = enterMessageTextField.text
         messageLabel.textColor = UIColor.redColor()
-        
+
+        //Clears text in Message Text field & removes on screen keyboard
         enterMessageTextField.text = ""
         enterMessageTextField.resignFirstResponder()
         
