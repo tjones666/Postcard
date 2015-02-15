@@ -95,13 +95,22 @@
                                     <rect key="frame" x="197" y="141" width="100" height="80"/>
                                 </variation>
                             </imageView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRb-W1-7wy">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MessageLabel" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRb-W1-7wy">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="9" y="77" width="288" height="47"/>
+                                </variation>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NameLabel" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0f-oJ-Xg5">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="9" y="162" width="176" height="21"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -113,6 +122,7 @@
                                 <exclude reference="K0N-A8-VRN"/>
                                 <exclude reference="bJw-jq-VGH"/>
                                 <exclude reference="RRb-W1-7wy"/>
+                                <exclude reference="n0f-oJ-Xg5"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -122,6 +132,7 @@
                                 <include reference="K0N-A8-VRN"/>
                                 <include reference="bJw-jq-VGH"/>
                                 <include reference="RRb-W1-7wy"/>
+                                <include reference="n0f-oJ-Xg5"/>
                             </mask>
                         </variation>
                     </view>
@@ -130,6 +141,7 @@
                         <outlet property="enterNameTextField" destination="5bM-uQ-jIz" id="GU2-5g-rWX"/>
                         <outlet property="mailButton" destination="K0N-A8-VRN" id="jIF-V4-UeD"/>
                         <outlet property="messageLabel" destination="RRb-W1-7wy" id="5O1-kZ-r2s"/>
+                        <outlet property="nameLabel" destination="n0f-oJ-Xg5" id="btg-pS-LF4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
